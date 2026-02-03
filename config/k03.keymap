@@ -28,7 +28,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&enc_vol>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
                 <&inc_dec_kp TAB LS(TAB)>,
                 <&enc_vol>,
                 <&enc_vol>,
@@ -46,6 +46,9 @@
             >;
 
             display-name = "Nav";
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp 0 0>;
         };
 
         sym {
