@@ -35,6 +35,8 @@
             label = "TAP_DANCE_SOFT_SIGN";
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
+
+            tapping-term-ms = <100>;
         };
     };
 
@@ -119,7 +121,7 @@
         delete_line: delete_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp END &kp LC(LS(HOME)) &kp BACKSPACE>;
+            bindings = <&kp END &kp LC(HOME) &kp BACKSPACE>;
             label = "DELETE_LINE";
         };
     };
@@ -149,7 +151,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE   &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O     &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &tap_dance_soft_sign  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &new_sentense_ru     &kp RIGHT_SHIFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &lt 2 ESC           &kp SPACE             &kp ENTER                  &l_st 4 LEFT_SHIFT  &kp RCTRL             &kp RALT             &kp RGUI
+                                    &kp LGUI              &kp LALT            &kp LCTRL           &lt 2 ESC           &kp SPACE             &kp ENTER                  &l_st 4 LEFT_SHIFT  &kp BACKSPACE         &kp RALT             &kp RGUI
             >;
         };
 
