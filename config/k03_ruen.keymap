@@ -36,6 +36,13 @@
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
         };
+
+        dot_comma_space_ru: dot_comma_space_ru {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOT_COMMA_SPACE_RU";
+            #binding-cells = <0>;
+            bindings = <&new_sentense_ru>, <&comma_space_ru>;
+        };
     };
 
     combos {
@@ -188,11 +195,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &trans        &en AT        &en DLLR      &en HASH         &trans                                     &trans                &trans    &en CARET    &trans    &trans                     &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT           &en GRAVE                                  &kp RU_DOUBLE_QUOTES  &en LBKT  &kp UNDER    &en RBKT  &kp RU_CYRILLIC_HARD_SIGN  &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR         &kp PLUS                                   &kp RU_PERCENT        &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL                   &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH      &kp RU_NUMERO  &trans              &trans  &trans                &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT                 &trans
-                      &trans        &trans        &comma_space_ru  &mo 5          &new_sentense_ru    &trans  &trans                &trans    &trans       &trans
+&trans  &trans        &en AT        &en DLLR      &en HASH         &trans                                        &trans                &trans    &en CARET    &trans    &trans                     &trans
+&trans  &trans        &en LT        &kp EQUAL     &en GT           &en GRAVE                                     &kp RU_DOUBLE_QUOTES  &en LBKT  &kp UNDER    &en RBKT  &kp RU_CYRILLIC_HARD_SIGN  &trans
+&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR         &kp PLUS                                      &kp RU_PERCENT        &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL                   &kp RU_QUESTION
+&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH      &kp RU_NUMERO  &trans                 &trans  &trans                &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT                 &trans
+                      &trans        &trans        &comma_space_ru  &mo 5          &dot_comma_space_ru    &trans  &trans                &trans    &trans       &trans
             >;
         };
 
