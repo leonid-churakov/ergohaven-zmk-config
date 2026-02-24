@@ -7,7 +7,6 @@
 
 &lt {
     flavor = "hold-preferred";
-    retro-tap;
 };
 
 / {
@@ -82,7 +81,7 @@
             label = "TOGGLE_LAYER_ON";
             #binding-cells = <1>;
             toggle-mode = "on";
-	    locking;
+            locking;
         };
 
         space_tp: space_tp {
