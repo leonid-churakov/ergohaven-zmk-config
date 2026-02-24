@@ -82,6 +82,7 @@
             label = "TOGGLE_LAYER_ON";
             #binding-cells = <1>;
             toggle-mode = "on";
+	    locking;
         };
 
         space_tp: space_tp {
