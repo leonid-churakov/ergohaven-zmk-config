@@ -103,6 +103,12 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+        cmb_game {
+            bindings = <&tog 7>;
+            key-positions = <0 1>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -272,6 +278,16 @@
 &kp APOS   &kp SEMI  &kp L    &kp K      &kp J   &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                      &trans   &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        GAME {
+            bindings = <
+&tog 7          &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &kp Y   &kp Q   &kp W   &kp E      &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp G   &kp A   &kp S   &kp D      &kp F                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT       &kp B   &kp Z   &kp X   &kp C      &kp V   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &kp LCTRL  &mo 6   &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
