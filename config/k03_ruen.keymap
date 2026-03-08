@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_TP";
             #binding-cells = <0>;
-            bindings = <&lt 6 SPACE>, <&kp SPACE>;
+            bindings = <&lt 7 SPACE>, <&kp SPACE>;
         };
     };
 
@@ -105,7 +105,7 @@
         };
 
         cmb_game {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <0 1>;
             layers = <0 1>;
         };
@@ -271,6 +271,16 @@
                 <&enc_vol>;
         };
 
+        GAME {
+            bindings = <
+&tog 6     &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp Y   &kp Q   &kp W   &kp E      &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp G   &kp A   &kp S   &kp D      &kp F                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp B   &kp Z   &kp X   &kp C      &kp V      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans  &trans  &kp LCTRL  &kp SPACE  &mo 7     &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         MIRROR {
             bindings = <
 &trans     &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -278,16 +288,6 @@
 &kp APOS   &kp SEMI  &kp L    &kp K      &kp J   &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                      &trans   &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        GAME {
-            bindings = <
-&tog 7          &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESC         &kp Y   &kp Q   &kp W   &kp E      &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp G   &kp A   &kp S   &kp D      &kp F                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT       &kp B   &kp Z   &kp X   &kp C      &kp V   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &kp LCTRL  &mo 6   &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
