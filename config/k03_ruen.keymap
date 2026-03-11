@@ -116,14 +116,14 @@
             layers = <0 1>;
         };
 
-        right_cklick_cmb {
-            bindings = <&none>;
+        right_click_cmb {
+            bindings = <&mkp TCLK>;
             key-positions = <18 19>;
             layers = <0 1>;
         };
 
-        middle_cllick_cmb {
-            bindings = <&none>;
+        middle_click_cmb {
+            bindings = <&mkp MCLK>;
             key-positions = <44 45>;
             layers = <0 1>;
         };
