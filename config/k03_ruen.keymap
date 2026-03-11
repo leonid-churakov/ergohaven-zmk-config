@@ -117,7 +117,7 @@
         };
 
         right_click_cmb {
-            bindings = <&mkp TCLK>;
+            bindings = <&mkp RCLK>;
             key-positions = <18 19>;
             layers = <0 1>;
         };
