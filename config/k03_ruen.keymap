@@ -110,22 +110,37 @@
             layers = <0 1>;
         };
 
-        left_click_cmb {
+        left_click_lcmb {
             bindings = <&mkp LCLK>;
             key-positions = <29 17>;
             layers = <0 1 6>;
         };
 
-        right_click_cmb {
+        right_click_lcmb {
             bindings = <&mkp RCLK>;
             key-positions = <15 27>;
             layers = <0 1 6>;
         };
 
-        middle_click_cmb {
+        middle_click_lcmb {
             bindings = <&mkp MCLK>;
             key-positions = <28 16>;
             layers = <0 1 6>;
+        };
+
+        left_click_rcmb {
+            bindings = <&mkp LCLK>;
+            key-positions = <30 31>;
+        };
+
+        right_click_rcmb {
+            bindings = <&mkp RCLK>;
+            key-positions = <18 19>;
+        };
+
+        middle_click_rcmb {
+            bindings = <&mkp MCLK>;
+            key-positions = <30 31>;
         };
     };
 
