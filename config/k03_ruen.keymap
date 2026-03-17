@@ -135,12 +135,12 @@
 
         right_click_rcmb {
             bindings = <&mkp RCLK>;
-            key-positions = <18 19>;
+            key-positions = <45 44>;
         };
 
         middle_click_rcmb {
             bindings = <&mkp MCLK>;
-            key-positions = <30 31>;
+            key-positions = <18 19>;
         };
     };
 
