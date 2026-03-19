@@ -142,6 +142,12 @@
             bindings = <&mkp MCLK>;
             key-positions = <18 19>;
         };
+
+        rctrl_cmb {
+            bindings = <&kp RCTRL>;
+            key-positions = <56 57>;
+            layers = <1 0>;
+        };
     };
 
     macros {
