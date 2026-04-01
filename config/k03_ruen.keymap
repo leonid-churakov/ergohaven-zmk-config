@@ -144,7 +144,7 @@
         };
 
         eng_word_cmb {
-            bindings = <&none>;
+            bindings = <&eng_word>;
             key-positions = <19 20>;
         };
     };
