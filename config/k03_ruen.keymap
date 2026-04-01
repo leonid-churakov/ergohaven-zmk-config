@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_TP";
             #binding-cells = <0>;
-            bindings = <&lt 7 SPACE>, <&kp SPACE>;
+            bindings = <&lt 8 SPACE>, <&kp SPACE>;
         };
     };
 
@@ -105,7 +105,7 @@
         };
 
         cmb_game {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <0 1>;
             layers = <1 0>;
         };
@@ -113,19 +113,19 @@
         left_click_lcmb {
             bindings = <&mkp LCLK>;
             key-positions = <29 17>;
-            layers = <1 0 6>;
+            layers = <1 0 7>;
         };
 
         right_click_lcmb {
             bindings = <&mkp RCLK>;
             key-positions = <15 27>;
-            layers = <1 0 6>;
+            layers = <1 0 7>;
         };
 
         middle_click_lcmb {
             bindings = <&mkp MCLK>;
             key-positions = <28 16>;
-            layers = <1 0 6>;
+            layers = <1 0 7>;
         };
 
         left_click_rcmb {
@@ -143,10 +143,9 @@
             key-positions = <18 19>;
         };
 
-        rctrl_cmb {
-            bindings = <&kp RCTRL>;
-            key-positions = <56 57>;
-            layers = <0 1>;
+        eng_word_cmb {
+            bindings = <&none>;
+            key-positions = <19 20>;
         };
     };
 
@@ -232,6 +231,13 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &layer_ru>;
             label = "KP_TO_RU";
         };
+
+        eng_word: eng_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en &tog 2>;
+            label = "ENG_WORD";
+        };
     };
 
     keymap {
@@ -244,7 +250,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U               &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE   &kp RU_CYRILLIC_SHA              &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &hml LEFT_SHIFT RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                            &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O     &hmr RIGHT_SHIFT RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES              &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp SPACE      &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &tap_dance_soft_sign  &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RIGHT_SHIFT
-                                    &kp LGUI              &kp LALT                        &kp LCTRL           &lt 2 ESC           &lt 7 SPACE    &kp ENTER                  &l_st 4 LEFT_SHIFT  &kp BACKSPACE         &kp RALT                         &kp RCTRL
+                                    &kp LGUI              &kp LALT                        &kp LCTRL           &lt 3 ESC           &lt 8 SPACE    &kp ENTER                  &l_st 5 LEFT_SHIFT  &kp BACKSPACE         &kp RALT                         &kp RCTRL
             >;
 
             sensor-bindings =
@@ -258,7 +264,7 @@
 &kp ESC    &kp Q   &kp W     &kp E     &kp R             &kp T                           &kp Y               &kp U              &kp I      &kp O      &kp P     &kp BSLH
 &kp TAB    &kp A   &kp S     &kp D     &mt LEFT_SHIFT F  &kp G                           &kp H               &mt RIGHT_SHIFT J  &kp K      &kp L      &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V             &kp B      &trans    &kp RBKT   &kp N               &kp M              &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL         &lt 2 ESC  &trans    &kp ENTER  &l_st 3 LEFT_SHIFT  &kp BACKSPACE      &kp RALT   &kp RCTRL
+                   &kp LGUI  &kp LALT  &kp LCTRL         &lt 3 ESC  &trans    &kp ENTER  &l_st 4 LEFT_SHIFT  &kp BACKSPACE      &kp RALT   &kp RCTRL
             >;
 
             display-name = "Base";
@@ -267,13 +273,23 @@
                 <&inc_dec_kp TAB LS(TAB)>;
         };
 
+        eng_word {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &kp_to_ru COMMA  &kp_to_ru DOT  &trans  &trans
+                &trans  &trans  &trans  &trans  &kp_to_ru SPACE    &kp_to_ru ENTER  &trans  &trans  &trans           &trans
+            >;
+        };
+
         nav {
             bindings = <
 &kp F1           &kp F2   &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7     &kp F8     &kp F9  &kp F10        &kp F11       &kp F12
 &kp PRINTSCREEN  &kp F10  &kp HOME      &kp UP      &kp END        &kp BACKSPACE                    &kp PG_UP  &kp N7     &kp N8  &kp N9         &trans        &trans
 &kp PAUSE_BREAK  &kp F11  &kp LEFT      &kp DOWN    &kp RIGHT      &kp RET                          &kp PG_DN  &kp N4     &kp N5  &kp N6         &kp N0        &trans
 &trans           &trans   &kp LC(LEFT)  &caps_word  &kp LC(RIGHT)  &kp DEL        &trans    &trans  &kp INS    &kp N1     &kp N2  &kp N3         &delete_line  &trans
-                          &trans        &trans      &trans         &tog 2         &trans    &trans  &mo 5      &kp RCTRL  &kp N0  &sk RIGHT_GUI
+                          &trans        &trans      &trans         &tog 3         &trans    &trans  &mo 6      &kp RCTRL  &kp N0  &sk RIGHT_GUI
             >;
 
             display-name = "Nav";
@@ -286,7 +302,7 @@
 &trans  &trans     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
 &trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
 &trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &trans     &trans
+                   &trans    &trans     &trans    &mo 6      &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -300,7 +316,7 @@
 &trans  &trans        &en LT        &kp EQUAL     &en GT           &en GRAVE                                     &kp RU_DOUBLE_QUOTES  &en LBKT  &kp UNDER    &en RBKT  &kp RU_CYRILLIC_HARD_SIGN  &trans
 &trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR         &kp PLUS                                      &kp RU_PERCENT        &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL                   &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH      &kp RU_NUMERO  &trans                 &trans  &trans                &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT                 &trans
-                      &trans        &trans        &comma_space_ru  &mo 5          &dot_comma_space_ru    &trans  &trans                &trans    &trans       &trans
+                      &trans        &trans        &comma_space_ru  &mo 6          &dot_comma_space_ru    &trans  &trans                &trans    &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -323,11 +339,11 @@
 
         GAME {
             bindings = <
-&tog 6     &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
+&tog 7     &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp T   &kp Q   &kp W   &kp E      &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp G   &kp A   &kp S   &kp D      &kp F                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp B   &kp Z   &kp X   &kp C      &kp V      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans  &trans  &kp LCTRL  &kp SPACE  &mo 7     &trans  &trans  &trans  &trans  &trans
+                   &trans  &trans  &kp LCTRL  &kp SPACE  &mo 8     &trans  &trans  &trans  &trans  &trans
             >;
         };
 
