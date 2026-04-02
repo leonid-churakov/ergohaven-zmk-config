@@ -101,7 +101,7 @@
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         cmb_game {
@@ -244,7 +244,7 @@
         compatible = "zmk,keymap";
 
         ru {
-            display-name = "Ru";
+            display-name = "Base";
             bindings = <
 &kp GRAVE  &kp N1                   &kp N2                &kp N3                          &kp N4              &kp N5                                                        &kp N6              &kp N7                &kp N8                           &kp N9                 &kp N0               &kp BSPC
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U               &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE   &kp RU_CYRILLIC_SHA              &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
@@ -267,7 +267,7 @@
                    &kp LGUI  &kp LALT  &kp LCTRL         &lt 3 ESC  &trans    &kp ENTER  &l_st 4 LEFT_SHIFT  &kp BACKSPACE      &kp RALT   &kp RCTRL
             >;
 
-            display-name = "Base";
+            display-name = "Eng";
             sensor-bindings =
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>,
                 <&inc_dec_kp TAB LS(TAB)>;
