@@ -87,15 +87,6 @@
             #binding-cells = <0>;
             bindings = <&lt 8 SPACE>, <&kp SPACE>;
         };
-
-        long_sk: long_sk {
-            compatible = "zmk,behavior-sticky-key";
-            label = "LONG_SK";
-            bindings = <&mkp>;
-            #binding-cells = <1>;
-            release-after-ms = <10000>;
-            ignore-modifiers;
-        };
     };
 
     combos {
@@ -255,7 +246,7 @@
         ru {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1                   &kp N2                &kp N3                          &kp N4              &kp N5                                                        &kp N6              &kp N7                &kp N8                           &kp N9                 &kp N0               &sl 9
+&kp GRAVE  &kp N1                   &kp N2                &kp N3                          &kp N4              &kp N5                                                        &kp N6              &kp N7                &kp N8                           &kp N9                 &kp N0               &kp BSPC
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U               &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                            &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE   &kp RU_CYRILLIC_SHA              &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &hml LEFT_SHIFT RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                            &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O     &hmr RIGHT_SHIFT RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES              &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp SPACE      &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &tap_dance_soft_sign  &kp RU_CYRILLIC_BE               &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RIGHT_SHIFT
@@ -366,16 +357,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &long_sk MB1  &long_sk MB3  &long_sk RCLK   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kt LCTRL     &kt LEFT_ALT  &kt LEFT_SHIFT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans        &trans        &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans          &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans        &trans
-            >;
         };
     };
 };
