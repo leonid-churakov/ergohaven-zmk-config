@@ -115,6 +115,13 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
+
+        caps_word_ru: caps_word_ru {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_RU";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE SEMI SQT COMMA DOT LBRC RBRC GRAVE>;
+        };
     };
 
     combos {
@@ -174,6 +181,12 @@
         eng_word_cmb {
             bindings = <&eng_word>;
             key-positions = <19 20>;
+        };
+
+        caps_word_ru_cmb {
+            bindings = <&caps_word_ru>;
+            key-positions = <36 49>;
+            layers = <0>;
         };
     };
 
