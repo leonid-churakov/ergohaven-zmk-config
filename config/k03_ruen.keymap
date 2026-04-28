@@ -326,11 +326,11 @@
 
         nav {
             bindings = <
-&kp F1           &kp F2   &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7     &kp F8     &kp F9  &kp F10        &kp F11       &kp F12
-&kp PRINTSCREEN  &kp F10  &kp HOME      &kp UP      &kp END        &kp BACKSPACE                    &kp PG_UP  &kp N7     &kp N8  &kp N9         &trans        &trans
-&kp PAUSE_BREAK  &kp F11  &kp LEFT      &kp DOWN    &kp RIGHT      &kp RET                          &kp PG_DN  &kp N4     &kp N5  &kp N6         &kp N0        &trans
-&trans           &trans   &kp LC(LEFT)  &caps_word  &kp LC(RIGHT)  &kp DEL        &trans    &trans  &kp INS    &kp N1     &kp N2  &kp N3         &delete_line  &trans
-                          &trans        &trans      &trans         &tog 3         &trans    &trans  &mo 6      &kp RCTRL  &kp N0  &sk RIGHT_GUI
+&kp F1           &kp F2   &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7     &kp F8         &kp F9          &kp F10           &kp F11            &kp F12
+&kp PRINTSCREEN  &kp F10  &kp HOME      &kp UP      &kp END        &kp BACKSPACE                    &kp PG_UP  &kp N7         &kp N8          &kp N9            &trans             &trans
+&kp PAUSE_BREAK  &kp F11  &kp LEFT      &kp DOWN    &kp RIGHT      &kp RET                          &kp PG_DN  &hmr RCTRL N4  &hmr RSHIFT N5  &hmr LEFT_ALT N6  &hmr RIGHT_GUI N0  &trans
+&trans           &trans   &kp LC(LEFT)  &caps_word  &kp LC(RIGHT)  &kp DEL        &trans    &trans  &kp INS    &kp N1         &kp N2          &kp N3            &delete_line       &trans
+                          &trans        &trans      &trans         &tog 3         &trans    &trans  &mo 6      &kp RCTRL      &kp N0          &sk RIGHT_GUI
             >;
 
             display-name = "Nav";
