@@ -346,11 +346,11 @@
 
         sym_en {
             bindings = <
-&trans  &trans     &kp AT    &kp DLLR   &kp HASH  &trans                       &trans     &trans    &kp CARET  &trans    &trans    &trans
-&trans  &trans     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 6      &trans    &trans  &trans     &trans    &trans     &trans
+&trans  &trans     &trans    &trans     &trans    &trans                       &trans      &trans    &kp CARET  &trans    &trans    &trans
+&trans  &kp AT     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET   &kp LBKT  &kp UNDER  &kp RBKT  &kp APOS  &kp DOUBLE_QUOTES
+&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT   &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
+&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &kp HASH   &trans    &trans  &kp DOLLAR  &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
+                   &trans    &trans     &trans    &mo 6      &trans    &trans  &trans      &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -360,11 +360,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &trans        &en AT        &en DLLR      &en HASH         &trans                                        &trans                &trans    &en CARET    &trans    &trans                     &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT           &en GRAVE                                     &kp RU_DOUBLE_QUOTES  &en LBKT  &kp UNDER    &en RBKT  &kp RU_CYRILLIC_HARD_SIGN  &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR         &kp PLUS                                      &kp RU_PERCENT        &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL                   &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH      &kp RU_NUMERO  &trans                 &trans  &trans                &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT                 &trans
-                      &trans        &trans        &comma_space_ru  &mo 6          &dot_comma_space_ru    &trans  &trans                &trans    &trans       &trans
+&trans  &trans        &trans        &kp RU_NUMERO  &trans           &trans                                    &trans          &trans    &en CARET    &trans    &trans            &trans
+&trans  &en AT        &en LT        &kp EQUAL      &en GT           &en GRAVE                                 &kp CARET       &en LBKT  &kp UNDER    &en RBKT  &en SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS      &kp RPAR         &kp PLUS                                  &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL          &kp RU_QUESTION
+&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON   &kp RU_FSLH      &en HASH   &trans                 &trans  &en DOLLAR      &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT        &trans
+                      &trans        &trans         &comma_space_ru  &mo 6      &dot_comma_space_ru    &trans  &trans          &trans    &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
