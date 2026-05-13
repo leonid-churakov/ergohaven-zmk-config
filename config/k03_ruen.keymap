@@ -270,8 +270,10 @@
         delete_line: delete_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp END &kp LS(HOME) &kp BACKSPACE>;
+            bindings = <&kp HOME &kp LS(END) &kp DELETE>;
             label = "DELETE_LINE";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         comma_space_ru: comma_space_ru {
