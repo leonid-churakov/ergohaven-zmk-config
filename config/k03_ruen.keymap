@@ -372,7 +372,7 @@
             display-name = "Symbols";
             bindings = <
 &trans  &trans        &trans        &kp RU_NUMERO  &trans           &trans                                    &trans          &trans    &en CARET    &trans    &trans            &trans
-&trans  &en AT        &en LT        &kp EQUAL      &en GT           &en GRAVE                                 &kp CARET       &en LBKT  &kp UNDER    &en RBKT  &en SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans  &en AT        &en LT        &kp EQUAL      &en GT           &en GRAVE                                 &kp CARET       &en LBKT  &kp UNDER    &en RBKT  &en SINGLE_QUOTE  &en DOUBLE_QUOTES
 &trans  &kp RU_BSLH   &kp LPAR      &kp MINUS      &kp RPAR         &kp PLUS                                  &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL          &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON   &kp RU_FSLH      &en HASH   &trans                 &trans  &en DOLLAR      &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT        &trans
                       &trans        &trans         &comma_space_ru  &mo 6      &dot_comma_space_ru    &trans  &trans          &trans    &trans       &trans
@@ -420,11 +420,11 @@
 
         win_switcher {
             bindings = <
-&trans  &trans  &trans      &trans      &trans      &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &kp LG(N5)  &kp LG(N6)  &kp LG(N7)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans      &kp LG(N8)  &kp LG(N9)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans      &trans      &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &trans      &trans      &trans      &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &trans      &kp LG(N5)  &kp LG(N6)  &kp LG(N7)                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp_to_ru LG(TAB)  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans  &trans      &trans      &kp LG(N8)  &kp LG(N9)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans      &trans      &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
