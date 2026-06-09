@@ -145,13 +145,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
             layers = <1 2>;
         };
 
@@ -196,7 +196,7 @@
 
         eng_word_cmb {
             bindings = <&eng_word>;
-            key-positions = <19 18>;
+            key-positions = <19 20>;
         };
 
         caps_word_cmb {
