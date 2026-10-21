@@ -450,11 +450,11 @@
 
         sticky_mods_layer {
             bindings = <
-&trans  &trans        &trans    &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans    &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &sk LEFT_GUI  &sk LALT  &sk LSHFT  &sk LCTRL  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans    &trans     &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans    &trans     &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans     &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans     &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &sk LEFT_GUI  &sk LALT   &sk LSHFT  &sk LCTRL  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans     &trans     &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
